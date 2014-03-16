@@ -50,6 +50,7 @@ test('returns false for non-generator function with faked toString', function (t
 	var func = function () {};
 	func.toString = function () { return 'function* () { return "TOTALLY REAL I SWEAR!"; }'; };
 
+	t.notEqual(String(func), Function.prototype.toString.apply(func), 'faked toString is not real toString');
 	t.notOk(isGeneratorFunction(func), 'anonymous function with faked toString is not a generator function');
 	t.end();
 });
