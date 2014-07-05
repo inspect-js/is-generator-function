@@ -4,9 +4,10 @@
 	"description": "Determine if a function is an ES6 generator function or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "node --harmony test/index.js",
+		"test": "npm run lint && node --harmony test/index.js",
 		"coverage": "covert test/index.js",
-		"coverage-quiet": "covert test/index.js --quiet"
+		"coverage-quiet": "covert test/index.js --quiet",
+		"lint": "jscs *.js */*.js"
 	},
 	"repository": {
 		"type": "git",
@@ -25,10 +26,12 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/is-generator-function/issues"
 	},
-	"dependencies": {},
+	"dependencies": {
+	},
 	"devDependencies": {
 		"tape": "~2.13.1",
-		"covert": "~0.4.0"
+		"covert": "~0.4.0",
+		"jscs": "~1.5.8"
 	},
 	"testling": {
 		"files": "test/index.js",
