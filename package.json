@@ -26,12 +26,11 @@
 	"bugs": {
 		"url": "https://github.com/ljharb/is-generator-function/issues"
 	},
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
 		"tape": "~2.14.0",
 		"covert": "~1.0.0",
-		"jscs": "~1.5.8"
+		"jscs": "~1.5.9"
 	},
 	"testling": {
 		"files": "test/index.js",
