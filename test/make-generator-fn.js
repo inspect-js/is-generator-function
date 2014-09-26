@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 var makeGeneratorFunction = function () {
     return Function('return function* () { var x = yield 6; return x * 7; }')();
