@@ -2,7 +2,7 @@
 
 var test = require('tape');
 var isGeneratorFunction = require('../index');
-var generatorFunc = require('../test/make-generator-fn');
+var generatorFunc = require('make-generator-function');
 
 var forEach = function (arr, func) {
 	var i;
