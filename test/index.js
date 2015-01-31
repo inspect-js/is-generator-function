@@ -3,6 +3,7 @@
 var test = require('tape');
 var isGeneratorFunction = require('../index');
 var generatorFunc = require('make-generator-function');
+var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
 
 var forEach = function (arr, func) {
 	var i;
@@ -55,6 +56,12 @@ test('returns false for non-generator function with faked toString', function (t
 	t.end();
 });
 
+test('returns false for non-generator function with faked @@toStringTag', { skip: !hasToStringTag }, function (t) {
+	var fakeGenFunction = { valueOf: function () { return generatorFunc; }, toString: function () { return String(generatorFunc); } };
+	fakeGenFunction[Symbol.toStringTag] = 'GeneratorFunction';
+	t.notOk(isGeneratorFunction(fakeGenFunction), 'fake GeneratorFunction with @@toStringTag "GeneratorFunction" is not a generator function');
+	t.end();
+});
 
 test('returns true for generator functions', function (t) {
 	if (generatorFunc) {
