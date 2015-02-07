@@ -31,7 +31,7 @@
 		"make-generator-function": "~1.0.0",
 		"tape": "~3.5.0",
 		"covert": "1.0.0",
-		"jscs": "~1.10.0",
+		"jscs": "~1.11.0",
 		"semver": "~4.2.0"
 	},
 	"testling": {
