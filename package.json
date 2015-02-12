@@ -28,11 +28,11 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"make-generator-function": "~1.0.0",
-		"tape": "~3.5.0",
-		"covert": "1.0.0",
-		"jscs": "~1.11.0",
-		"semver": "~4.2.0"
+		"make-generator-function": "^1.0.0",
+		"tape": "^3.5.0",
+		"covert": "^1.0.1",
+		"jscs": "^1.11.3",
+		"semver": "^4.2.2"
 	},
 	"testling": {
 		"files": "test/index.js",
