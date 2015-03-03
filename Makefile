@@ -9,7 +9,7 @@ VERSIONED_FILES := *.js */*.js *.json README*
 # Note that rather than using `$(npm bin)` the 'node_modules/.bin' path component is hard-coded, so that invocation works even from an environment
 # where npm is (temporarily) unavailable due to having deactivated an nvm instance loaded into the calling shell in order to avoid interference with tests.
 export PATH := $(shell printf '%s' "$$PWD/node_modules/.bin:$$PATH")
-UTILS := semver
+UTILS := semver replace
 # Make sure that all required utilities can be located.
 UTIL_CHECK := $(or $(shell PATH="$(PATH)" which $(UTILS) >/dev/null && echo 'ok'),$(error Did you forget to run `npm install` after cloning the repo? At least one of the required supporting utilities not found: $(UTILS)))
 
