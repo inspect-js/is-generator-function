@@ -32,7 +32,7 @@
 		"tape": "^3.5.0",
 		"covert": "^1.0.1",
 		"jscs": "^1.11.3",
-		"semver": "^4.2.2"
+		"semver": "^4.3.1"
 	},
 	"testling": {
 		"files": "test/index.js",
