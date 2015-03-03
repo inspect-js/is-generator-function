@@ -28,7 +28,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"make-generator-function": "^1.0.0",
+		"make-generator-function": "^1.1.0",
 		"tape": "^3.5.0",
 		"covert": "^1.0.1",
 		"jscs": "^1.11.3",

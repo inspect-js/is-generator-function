@@ -72,3 +72,18 @@ test('returns true for generator functions', function (t) {
 	t.end();
 });
 
+test('concise methods', { skip: !generatorFunc || !generatorFunc.concise }, function (t) {
+	t.test('returns true for concise generator methods', function (st) {
+		st.ok(isGeneratorFunction(generatorFunc.concise), 'concise generator method is generator function');
+		st.end();
+    });
+
+	t.test('returns false for concise non-generator methods', function (st) {
+		var conciseMethod = Function('return { concise() {} }.concise;')();
+		st.equal(typeof conciseMethod, 'function', 'assert: concise method exists');
+		st.notOk(isGeneratorFunction(conciseMethod), 'concise non-generator method is not generator function');
+		st.end();
+	});
+
+	t.end();
+});

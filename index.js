@@ -2,7 +2,7 @@
 
 var toStr = Object.prototype.toString;
 var fnToStr = Function.prototype.toString;
-var isFnRegex = /^\s*function\*/;
+var isFnRegex = /^\s*(?:function)?\*/;
 
 module.exports = function isGeneratorFunction(fn) {
 	if (typeof fn !== 'function') { return false; }
