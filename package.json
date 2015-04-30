@@ -4,12 +4,13 @@
 	"description": "Determine if a function is an ES6 generator function or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && node --es-staging --harmony test/index.js",
+		"test": "npm run lint && node --es-staging --harmony test/index.js && npm run security",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
 		"lint": "npm run jscs && npm run eslint",
 		"jscs": "jscs *.js */*.js",
-		"eslint": "eslint *.js */*.js"
+		"eslint": "eslint *.js */*.js",
+		"security": "nsp package"
 	},
 	"repository": {
 		"type": "git",
@@ -36,7 +37,8 @@
 		"jscs": "^1.13.0",
 		"eslint": "^0.20.0",
 		"semver": "^4.3.3",
-		"replace": "^0.3.0"
+		"replace": "^0.3.0",
+		"nsp": "^1.0.1"
 	},
 	"testling": {
 		"files": "test/index.js",
