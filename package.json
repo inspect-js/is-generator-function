@@ -35,10 +35,10 @@
 		"tape": "^4.0.0",
 		"covert": "^1.1.0",
 		"jscs": "^1.13.1",
-		"eslint": "^0.21.2",
-		"semver": "^4.3.4",
+		"eslint": "^0.23.0",
+		"semver": "^4.3.6",
 		"replace": "^0.3.0",
-		"nsp": "^1.0.1"
+		"nsp": "^1.0.3"
 	},
 	"testling": {
 		"files": "test/index.js",

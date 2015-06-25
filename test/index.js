@@ -1,6 +1,6 @@
 'use strict';
 
-/*globals window */
+/* globals window */
 
 var test = require('tape');
 var isGeneratorFunction = require('../index');
