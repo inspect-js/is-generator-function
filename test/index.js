@@ -59,7 +59,7 @@ test('returns false for non-generator function with faked toString', function (t
 });
 
 test('returns false for non-generator function with faked @@toStringTag', { skip: !hasToStringTag }, function (t) {
-	var fakeGenFunction = { valueOf: function () { return generatorFunc; }, toString: function () { return String(generatorFunc); } };
+	var fakeGenFunction = { toString: function () { return String(generatorFunc); }, valueOf: function () { return generatorFunc; } };
 	fakeGenFunction[Symbol.toStringTag] = 'GeneratorFunction';
 	t.notOk(isGeneratorFunction(fakeGenFunction), 'fake GeneratorFunction with @@toStringTag "GeneratorFunction" is not a generator function');
 	t.end();
