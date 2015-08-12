@@ -25,7 +25,7 @@ assert(isGeneratorFunction(function* () { yield 42; return Infinity; });
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/is-generator-function
-[2]: http://vb.teelaun.ch/ljharb/is-generator-function.svg
+[2]: http://versionbadg.es/ljharb/is-generator-function.svg
 [3]: https://travis-ci.org/ljharb/is-generator-function.svg
 [4]: https://travis-ci.org/ljharb/is-generator-function
 [5]: https://david-dm.org/ljharb/is-generator-function.svg
