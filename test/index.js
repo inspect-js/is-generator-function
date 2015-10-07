@@ -41,10 +41,10 @@ test('returns false for non-generator functions', function (t) {
 	var namedFunc = function foo() {};
 	t.notOk(isGeneratorFunction(namedFunc), 'named function is not an generator function');
 
-	if (typeof window !== 'undefined') {
-		t.notOk(isGeneratorFunction(window.alert), 'window.alert is not an generator function');
-	} else {
+	if (typeof window === 'undefined') {
 		t.skip('window.alert is not an generator function');
+	} else {
+		t.notOk(isGeneratorFunction(window.alert), 'window.alert is not an generator function');
 	}
 	t.end();
 });
