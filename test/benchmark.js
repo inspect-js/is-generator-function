@@ -1,14 +1,14 @@
-const oldCheck = require("./benchmark/old");
-const newCheck = require("./benchmark/new");
+var oldCheck = require('./benchmark/old');
+var newCheck = require('./benchmark/new');
 
-const hrtimeToMilliseconds = function (hrtime) {
+var hrtimeToMilliseconds = function (hrtime) {
     return (hrtime[0] * 1000) + (hrtime[1] / 1000000.0);
 };
 
-const runBenchmark = function (check, fn) {
-    const start = process.hrtime();
+var runBenchmark = function (check, fn) {
+    var start = process.hrtime();
 
-    const acc = [];
+    var acc = [];
     for (let i = 0; i < 1000000; i++) {
         acc.push(check(fn));
     }
@@ -16,6 +16,6 @@ const runBenchmark = function (check, fn) {
     return hrtimeToMilliseconds(process.hrtime(start));
 };
 
-const fn = function* () {};
+var fn = function * () {};
 console.log(`new time: ${ runBenchmark(newCheck, fn) }ms`);
 console.log(`old time: ${ runBenchmark(oldCheck, fn) }ms`);
