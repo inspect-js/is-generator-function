@@ -1,11 +1,7 @@
 'use strict';
 
-var toStr = Object.prototype.toString;
-var fnToStr = Function.prototype.toString;
-var isFnRegex = /^\s*(?:function)?\*/;
+var GeneratorFunction = (function* () {}).constructor;
 
 module.exports = function isGeneratorFunction(fn) {
-	if (typeof fn !== 'function') { return false; }
-	var fnStr = toStr.call(fn);
-	return (fnStr === '[object Function]' || fnStr === '[object GeneratorFunction]') && isFnRegex.test(fnToStr.call(fn));
+    return (fn instanceof GeneratorFunction);
 };
