@@ -4,7 +4,10 @@
 	"description": "Determine if a function is an ES6 generator function or not.",
 	"main": "index.js",
 	"scripts": {
-		"test": "npm run lint && node --es-staging --harmony test/index.js && npm run security",
+		"pretest": "npm run lint",
+		"test": "npm run tests-only",
+		"tests-only": "node --es-staging --harmony test/index.js",
+		"posttest": "npm run security",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
 		"lint": "npm run jscs && npm run eslint",
