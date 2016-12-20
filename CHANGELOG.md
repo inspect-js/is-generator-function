@@ -1,3 +1,11 @@
+1.0.5 / 2016-12-19
+=================
+  * [Fix] account for Safari 10 which reports the wrong toString on generator functions
+  * [Refactor] remove useless `Object#toString` check
+  * [Dev Deps] update everything; add linting
+  * [Tests] use pretest/posttest for linting/security
+  * [Tests] on all minors of node and io.js
+
 1.0.4 / 2015-03-03
 =================
   * Add support for concise generator methods (#2) This is a patch change since concise methods are not in any actual released engines yet.
