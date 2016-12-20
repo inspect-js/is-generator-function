@@ -5,8 +5,10 @@ var fnToStr = Function.prototype.toString;
 var isFnRegex = /^\s*(?:function)?\*/;
 var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
 var getProto = Object.getPrototypeOf;
-var getGeneratorFunc = function () {
-	if (!hasToStringTag) { return false; }
+var getGeneratorFunc = function () { // eslint-disable-line consistent-return
+	if (!hasToStringTag) {
+		return false;
+	}
 	try {
 		return Function('return function*() {}')();
 	} catch (e) {
