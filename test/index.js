@@ -59,7 +59,10 @@ test('returns false for non-generator function with faked toString', function (t
 });
 
 test('returns false for non-generator function with faked @@toStringTag', { skip: !hasToStringTag }, function (t) {
-	var fakeGenFunction = { toString: function () { return String(generatorFunc); }, valueOf: function () { return generatorFunc; } };
+	var fakeGenFunction = {
+		toString: function () { return String(generatorFunc); },
+		valueOf: function () { return generatorFunc; }
+	};
 	fakeGenFunction[Symbol.toStringTag] = 'GeneratorFunction';
 	t.notOk(isGeneratorFunction(fakeGenFunction), 'fake GeneratorFunction with @@toStringTag "GeneratorFunction" is not a generator function');
 	t.end();
@@ -78,7 +81,7 @@ test('concise methods', { skip: !generatorFunc || !generatorFunc.concise }, func
 	t.test('returns true for concise generator methods', function (st) {
 		st.ok(isGeneratorFunction(generatorFunc.concise), 'concise generator method is generator function');
 		st.end();
-    });
+	});
 
 	t.test('returns false for concise non-generator methods', function (st) {
 		var conciseMethod = Function('return { concise() {} }.concise;')();
