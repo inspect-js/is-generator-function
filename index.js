@@ -5,7 +5,15 @@ var fnToStr = Function.prototype.toString;
 var isFnRegex = /^\s*(?:function)?\*/;
 var hasToStringTag = typeof Symbol === 'function' && typeof Symbol.toStringTag === 'symbol';
 var getProto = Object.getPrototypeOf;
-var GeneratorFunction = hasToStringTag ? getProto(Function('return function*() {}')()) : {};
+var getGeneratorFunc = function () {
+	if (!hasToStringTag) { return false; }
+	try {
+		return Function('return function*() {}')();
+	} catch (e) {
+	}
+};
+var generatorFunc = getGeneratorFunc();
+var GeneratorFunction = generatorFunc ? getProto(generatorFunc) : {};
 
 module.exports = function isGeneratorFunction(fn) {
 	if (typeof fn !== 'function') {

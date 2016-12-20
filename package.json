@@ -7,6 +7,8 @@
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
 		"tests-only": "node --es-staging --harmony test/index.js",
+		"posttests-only": "npm run test:corejs",
+		"test:corejs": "node test/corejs",
 		"posttest": "npm run security",
 		"coverage": "covert test/index.js",
 		"coverage-quiet": "covert test/index.js --quiet",
@@ -42,7 +44,8 @@
 		"@ljharb/eslint-config": "^9.0.1",
 		"semver": "^5.3.0",
 		"replace": "^0.3.0",
-		"nsp": "^2.6.2"
+		"nsp": "^2.6.2",
+		"core-js": "^2.4.1"
 	},
 	"testling": {
 		"files": "test/index.js",
