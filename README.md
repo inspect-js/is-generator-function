@@ -10,7 +10,7 @@
 
 [![browser support][9]][10]
 
-Is this an ES6 generator function?
+Is this a native generator function?
 
 ## Example
 

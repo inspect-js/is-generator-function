@@ -1,7 +1,7 @@
 {
 	"name": "is-generator-function",
-	"version": "1.0.5",
-	"description": "Determine if a function is an ES6 generator function or not.",
+	"version": "1.0.6",
+	"description": "Determine if a function is a native generator function.",
 	"main": "index.js",
 	"scripts": {
 		"pretest": "npm run lint",
@@ -25,6 +25,7 @@
 		"generator",
 		"generator function",
 		"es6",
+		"es2015",
 		"yield",
 		"function",
 		"function*"

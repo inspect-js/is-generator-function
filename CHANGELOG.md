@@ -1,3 +1,7 @@
+1.0.6 / 2016-12-20
+=================
+  * [Fix] fix `is-generator-function` in an env without native generators, with core-js (https://github.com/ljharb/is-equal/issues/33)
+
 1.0.5 / 2016-12-19
 =================
   * [Fix] account for Safari 10 which reports the wrong toString on generator functions
