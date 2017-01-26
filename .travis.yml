@@ -2,10 +2,10 @@ language: node_js
 os:
  - linux
 node_js:
-  - "7.2"
+  - "7.4"
   - "6.9"
   - "5.12"
-  - "4.6"
+  - "4.7"
   - "iojs-v3.3"
   - "iojs-v2.5"
   - "iojs-v1.8"
@@ -30,6 +30,10 @@ matrix:
       env: PRETEST=true
     - node_js: "node"
       env: POSTTEST=true
+    - node_js: "7.3"
+      env: TEST=true ALLOW_FAILURE=true
+    - node_js: "7.2"
+      env: TEST=true ALLOW_FAILURE=true
     - node_js: "7.1"
       env: TEST=true ALLOW_FAILURE=true
     - node_js: "7.0"
@@ -75,6 +79,8 @@ matrix:
     - node_js: "5.1"
       env: TEST=true ALLOW_FAILURE=true
     - node_js: "5.0"
+      env: TEST=true ALLOW_FAILURE=true
+    - node_js: "4.6"
       env: TEST=true ALLOW_FAILURE=true
     - node_js: "4.5"
       env: TEST=true ALLOW_FAILURE=true
