@@ -1,4 +1,4 @@
-#is-generator-function <sup>[![Version Badge][2]][1]</sup>
+# is-generator-function <sup>[![Version Badge][2]][1]</sup>
 
 [![Build Status][3]][4]
 [![dependency status][5]][6]
@@ -18,7 +18,7 @@ Is this a native generator function?
 var isGeneratorFunction = require('is-generator-function');
 assert(!isGeneratorFunction(function () {}));
 assert(!isGeneratorFunction(null));
-assert(isGeneratorFunction(function* () { yield 42; return Infinity; });
+assert(isGeneratorFunction(function* () { yield 42; return Infinity; }));
 ```
 
 ## Tests
