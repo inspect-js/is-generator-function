@@ -7,8 +7,9 @@
 		"pretest": "npm run lint",
 		"test": "npm run tests-only",
 		"tests-only": "node --es-staging --harmony test",
-		"posttests-only": "npm run test:corejs",
+		"posttests-only": "npm run test:corejs && npm run test:uglified",
 		"test:corejs": "node test/corejs",
+		"test:uglified": "node test/uglified",
 		"posttest": "npm run security",
 		"coverage": "covert test",
 		"lint": "npm run jscs && npm run eslint",
@@ -45,7 +46,8 @@
 		"nsp": "^3.1.0",
 		"replace": "^0.3.0",
 		"semver": "^5.4.1",
-		"tape": "^4.8.0"
+		"tape": "^4.8.0",
+		"uglify-register": "^1.0.0"
 	},
 	"testling": {
 		"files": "test/index.js",
