@@ -47,7 +47,7 @@
 		"replace": "^0.3.0",
 		"semver": "^5.4.1",
 		"tape": "^4.8.0",
-		"uglify-register": "^1.0.0"
+		"uglify-register": "^1.0.1"
 	},
 	"testling": {
 		"files": "test/index.js",
