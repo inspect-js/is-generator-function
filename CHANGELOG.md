@@ -1,3 +1,9 @@
+1.0.7 / 2017-12-27
+=================
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `core-js`, `nsp`, `semver`, `tape`
+  * [Tests] up to `node` `v9.3`, `v8.9`, `v6.12`; pin included builds to LTS; use `nvm install-latest-npm`
+  * [Tests] run tests with uglify-register
+
 1.0.6 / 2016-12-20
 =================
   * [Fix] fix `is-generator-function` in an env without native generators, with core-js (https://github.com/ljharb/is-equal/issues/33)
