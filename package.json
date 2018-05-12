@@ -38,13 +38,13 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^12.2.1",
-		"core-js": "^2.5.5",
+		"core-js": "^2.5.6",
 		"covert": "^1.1.0",
 		"eslint": "^4.19.1",
 		"jscs": "^3.0.7",
 		"make-generator-function": "^1.1.0",
 		"nsp": "^3.2.1",
-		"replace": "^0.3.0",
+		"replace": "^1.0.0",
 		"semver": "^5.5.0",
 		"tape": "^4.9.0",
 		"uglify-register": "^1.0.1"
