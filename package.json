@@ -12,7 +12,7 @@
 		"test:uglified": "node test/uglified",
 		"posttest": "npm run audit",
 		"coverage": "covert test",
-		"lint": "eslint *.js */*.js",
+		"lint": "eslint .",
 		"preaudit": "npm install --package-lock --package-lock-only",
 		"audit": "npm audit",
 		"postaudit": "rm package-lock.json"
@@ -37,14 +37,14 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^12.2.1",
-		"core-js": "^2.5.6",
+		"@ljharb/eslint-config": "^13.0.0",
+		"core-js": "^2.6.1",
 		"covert": "^1.1.0",
-		"eslint": "^4.19.1",
+		"eslint": "^5.10.0",
 		"make-generator-function": "^1.1.0",
-		"replace": "^1.0.0",
-		"semver": "^5.5.0",
-		"tape": "^4.9.0",
+		"replace": "^1.0.1",
+		"semver": "^5.6.0",
+		"tape": "^4.9.1",
 		"uglify-register": "^1.0.1"
 	},
 	"testling": {
