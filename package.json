@@ -10,10 +10,12 @@
 		"posttests-only": "npm run test:corejs && npm run test:uglified",
 		"test:corejs": "node test/corejs",
 		"test:uglified": "node test/uglified",
-		"posttest": "npm run security",
+		"posttest": "npm run audit",
 		"coverage": "covert test",
 		"lint": "eslint *.js */*.js",
-		"security": "nsp check"
+		"preaudit": "npm install --package-lock --package-lock-only",
+		"audit": "npm audit",
+		"postaudit": "rm package-lock.json"
 	},
 	"repository": {
 		"type": "git",
@@ -40,7 +42,6 @@
 		"covert": "^1.1.0",
 		"eslint": "^4.19.1",
 		"make-generator-function": "^1.1.0",
-		"nsp": "^3.2.1",
 		"replace": "^1.0.0",
 		"semver": "^5.5.0",
 		"tape": "^4.9.0",
