@@ -12,9 +12,7 @@
 		"test:uglified": "node test/uglified",
 		"posttest": "npm run security",
 		"coverage": "covert test",
-		"lint": "npm run jscs && npm run eslint",
-		"jscs": "jscs *.js */*.js",
-		"eslint": "eslint *.js */*.js",
+		"lint": "eslint *.js */*.js",
 		"security": "nsp check"
 	},
 	"repository": {
@@ -41,7 +39,6 @@
 		"core-js": "^2.5.6",
 		"covert": "^1.1.0",
 		"eslint": "^4.19.1",
-		"jscs": "^3.0.7",
 		"make-generator-function": "^1.1.0",
 		"nsp": "^3.2.1",
 		"replace": "^1.0.0",
