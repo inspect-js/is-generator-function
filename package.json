@@ -35,7 +35,7 @@
 	"dependencies": {},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^13.1.1",
-		"core-js": "^2.6.5",
+		"core-js": "^2.6.5 || ^3",
 		"covert": "^1.1.1",
 		"eslint": "^5.16.0",
 		"make-generator-function": "^1.1.0",
