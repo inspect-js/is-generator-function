@@ -43,9 +43,9 @@
 		"auto-changelog": "^1.16.2",
 		"core-js": "^2.6.5 || ^3",
 		"covert": "^1.1.1",
-		"eslint": "^6.6.0",
+		"eslint": "^6.7.2",
 		"make-generator-function": "^1.1.0",
-		"tape": "^4.11.0",
+		"tape": "^4.12.0",
 		"uglify-register": "^1.0.1"
 	},
 	"testling": {
