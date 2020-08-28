@@ -21,11 +21,12 @@ module.exports = function isGeneratorFunction(fn) {
 	if (typeof fn !== 'function') {
 		return false;
 	}
-	if (!hasToStringTag) {
-		return toStr.call(fn) === '[object GeneratorFunction]';
-	}
 	if (isFnRegex.test(fnToStr.call(fn))) {
 		return true;
+	}
+	if (!hasToStringTag) {
+		var str = toStr.call(fn);
+		return str === '[object GeneratorFunction]';
 	}
 	return getProto && getProto(fn) === GeneratorFunction;
 };
