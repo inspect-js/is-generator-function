@@ -1,6 +1,6 @@
 {
 	"name": "is-generator-function",
-	"version": "1.0.7",
+	"version": "1.0.8",
 	"description": "Determine if a function is a native generator function.",
 	"main": "index.js",
 	"scripts": {

@@ -5,6 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.8](https://github.com/inspect-js/is-generator-function/compare/v1.0.7...v1.0.8) - 2020-12-02
+
+### Fixed
+
+- [Refactor] improve performance in non-toStringTag envs [`#9`](https://github.com/inspect-js/is-generator-function/issues/9)
+
+### Commits
+
+- [Tests] use shared travis-ci configs [`98c84ec`](https://github.com/inspect-js/is-generator-function/commit/98c84ecd38d7d64b2aa070fa2c240be4373be131)
+- [Tests] migrate tests to Github Actions [`52ea2e2`](https://github.com/inspect-js/is-generator-function/commit/52ea2e2e14da2278c7844a18af4aaef1cc8bb3bb)
+- [meta] add `auto-changelog` [`a31c8d9`](https://github.com/inspect-js/is-generator-function/commit/a31c8d9e8fe4f397e1f8da5b1297050542cd00c3)
+- [Tests] remove `jscs` [`c30694e`](https://github.com/inspect-js/is-generator-function/commit/c30694e5e1739a37c455b8bfae4cc7c4347292de)
+- [meta] remove unused Makefile and associated utilities [`23a8dd7`](https://github.com/inspect-js/is-generator-function/commit/23a8dd75ea554642aadb1313c1cbbd11fe69eb1d)
+- [Tests] up to `node` `v11.4`, `v10.14`, `v8.14`, `v6.15` [`9711495`](https://github.com/inspect-js/is-generator-function/commit/9711495e58fa9477167d7dbc582749981c3f5ee5)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `tape`, `make-generator-function`; add `safe-publish-latest` [`3afb4d0`](https://github.com/inspect-js/is-generator-function/commit/3afb4d033587eeddfd2dc840ff98c10f3abea48e)
+- [Tests] up to `node` `v10.0`, `v9.11`, `v8.11`, `v6.14`, `v4.9` [`f1e9b0f`](https://github.com/inspect-js/is-generator-function/commit/f1e9b0f150e77357ecd4afac5873a3bd3ada7b02)
+- [Tests] up to `node` `v11.13`, `v10.15`, `v8.15`, `v6.17` [`433ca64`](https://github.com/inspect-js/is-generator-function/commit/433ca64d5500371516598bebb19fc00370e7c9c7)
+- [Tests] run `nyc` on all tests [`84d8e18`](https://github.com/inspect-js/is-generator-function/commit/84d8e18c441c4c181e51a339559040f95adc4d94)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`ec51a9f`](https://github.com/inspect-js/is-generator-function/commit/ec51a9f2e6f5da5ae5e8b446e0112eeaa0853954)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `replace`, `semver`, `tape` [`180fb0d`](https://github.com/inspect-js/is-generator-function/commit/180fb0dbd1a9d6975344d2deb4338c9071e865b1)
+- [actions] add automatic rebasing / merge commit blocking [`7e0f94b`](https://github.com/inspect-js/is-generator-function/commit/7e0f94b055308abc8469e526980991a12a87cfaf)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `covert`, `tape`, `replace`, `semver`, `core-js` [`75768b3`](https://github.com/inspect-js/is-generator-function/commit/75768b30b7d4c92231ed53ec72d2f4ae81274d4c)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `core-js`, `replace`, `semver`, `tape` [`d6413cd`](https://github.com/inspect-js/is-generator-function/commit/d6413cd0bfc27c924619200efe39d9956d6fb638)
+- [actions] add "Allow Edits" workflow [`e73fec7`](https://github.com/inspect-js/is-generator-function/commit/e73fec71e5d1c99246a6f905091e133860931245)
+- [Dev Deps] update `core-js`, `eslint`, `nsp`, `semver`, `tape` [`6746c73`](https://github.com/inspect-js/is-generator-function/commit/6746c733fa535f724700726356a9156d491b54ae)
+- [Tests] switch from `nsp` to `npm audit`; allow it to fail for now [`301aa25`](https://github.com/inspect-js/is-generator-function/commit/301aa2557b4b99962a0e48191c4719c5a95eb69b)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog` [`d978937`](https://github.com/inspect-js/is-generator-function/commit/d978937e3c86b3e239e0ceecc2324134806e0a32)
+- Revert "[Refactor] improve performance in non-toStringTag envs" [`3892c18`](https://github.com/inspect-js/is-generator-function/commit/3892c18f95a8b5ea57f9893e6d8dce89fec4af30)
+- [Tests] test on both core-js 3 and 2 [`fac5447`](https://github.com/inspect-js/is-generator-function/commit/fac54476693d1b8573cbd36bc3c6eb74cbeb7468)
+- [Tests] use `npx aud` instead of `npm audit` with hoops [`e12897f`](https://github.com/inspect-js/is-generator-function/commit/e12897feae0185f89592dfe1a02a2a4520180313)
+- [meta] add `funding` field [`60711d1`](https://github.com/inspect-js/is-generator-function/commit/60711d122a4ef7ab6a9bee6044a26352ba7f86bd)
+- [Fix] `Object.getPrototypeOf` does not exist in all engines [`7484531`](https://github.com/inspect-js/is-generator-function/commit/7484531c55a61fdb7e8d819ce9aa363f29b2c704)
+- [Dev Deps] update `auto-changelog`, `tape` [`fe92b74`](https://github.com/inspect-js/is-generator-function/commit/fe92b743baaf206e3ee849c551171f0a56b7fa23)
+- [Dev Deps] update `eslint`, `tape` [`2f16f77`](https://github.com/inspect-js/is-generator-function/commit/2f16f77aae4c9aafe65fb29854f46b783d853c58)
+- [Dev Deps] update `core-js`, `replace` [`c67825a`](https://github.com/inspect-js/is-generator-function/commit/c67825a62b7bad7911a1bdb5af237d86229aa4bc)
+- [Tests] on `node` `v10.1` [`b00dbcc`](https://github.com/inspect-js/is-generator-function/commit/b00dbcce7a9f6df4fb35e99fac79560389a9a272)
+- [actions] update rebase action to use checkout v2 [`85c7947`](https://github.com/inspect-js/is-generator-function/commit/85c7947d7474468a5e6dd30b00f632e43f45c21d)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`d2fd827`](https://github.com/inspect-js/is-generator-function/commit/d2fd827cf87a90d647d93185f6d5e332fb7b1bb4)
+- [Dev Deps] update `@ljharb/eslint-config` [`791766e`](https://github.com/inspect-js/is-generator-function/commit/791766e4f12a96d3b9949128f813dadd428d0891)
+
 ## [v1.0.7](https://github.com/inspect-js/is-generator-function/compare/v1.0.6...v1.0.7) - 2017-12-27
 
 ### Fixed
