@@ -20,7 +20,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/ljharb/is-generator-function.git"
+		"url": "git://github.com/inspect-js/is-generator-function.git"
 	},
 	"keywords": [
 		"generator",
@@ -37,7 +37,7 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/ljharb/is-generator-function/issues"
+		"url": "https://github.com/inspect-js/is-generator-function/issues"
 	},
 	"dependencies": {},
 	"devDependencies": {
