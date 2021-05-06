@@ -1,0 +1,28 @@
+# gitignore
+
+lib-cov
+coverage/
+.nyc_output/
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+testling.html
+
+# Only apps should have lockfiles
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
+
+.github/workflows
