@@ -13,7 +13,7 @@ jobs:
         id: set-matrix
         with:
           versionsAsRoot: true
-          preset: '>= 0.4'
+          preset: '>=0.4 <16'
 
   stable:
     needs: [matrix]
