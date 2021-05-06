@@ -44,7 +44,7 @@
 		"@ljharb/eslint-config": "^17.6.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.2.1",
-		"core-js": "^2.6.5 || ^3 <3.9",
+		"core-js": "^2.6.5 || ^3.12.0",
 		"eslint": "^7.25.0",
 		"make-generator-function": "^2.0.0",
 		"nyc": "^10.3.2",
