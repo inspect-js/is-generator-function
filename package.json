@@ -40,6 +40,9 @@
 	"bugs": {
 		"url": "https://github.com/inspect-js/is-generator-function/issues"
 	},
+	"dependencies": {
+		"has-tostringtag": "^1.0.0"
+	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^17.6.0",
 		"aud": "^1.1.5",
