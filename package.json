@@ -15,7 +15,7 @@
 		"test:corejs": "node test/corejs",
 		"test:uglified": "node test/uglified",
 		"posttest": "aud --production",
-		"lint": "eslint .",
+		"lint": "eslint --ext=js,mjs .",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -44,15 +44,15 @@
 		"has-tostringtag": "^1.0.0"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.6.0",
+		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
-		"core-js": "^2.6.5 || ^3.16.0",
-		"eslint": "^7.32.0",
+		"core-js": "^2.6.5 || ^3.20.0",
+		"eslint": "^8.4.1",
 		"make-generator-function": "^2.0.0",
 		"nyc": "^10.3.2",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.3.0",
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.3.2",
 		"uglify-register": "^1.0.1"
 	},
 	"testling": {
