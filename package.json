@@ -44,6 +44,7 @@
 		"has-tostringtag": "^1.0.0"
 	},
 	"devDependencies": {
+		"@babel/eslint-parser": "^7.17.0",
 		"@ljharb/eslint-config": "^20.1.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
