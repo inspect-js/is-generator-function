@@ -2,6 +2,8 @@
 	"root": true,
 
 	"extends": "@ljharb",
+	
+	"parser": "@babel/eslint-parser",
 
 	"rules": {
 		"no-new-func": 1,
