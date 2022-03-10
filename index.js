@@ -10,7 +10,7 @@ var getGeneratorFunc = function () { // eslint-disable-line consistent-return
 		return false;
 	}
 	try {
-		return Function('return function*() {}')();
+		return (function*() {});
 	} catch (e) {
 	}
 };
