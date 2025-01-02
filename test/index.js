@@ -3,16 +3,12 @@
 /* globals window */
 
 var test = require('tape');
-var isGeneratorFunction = require('../index');
+
 var generatorFuncs = require('make-generator-function')();
 var hasToStringTag = require('has-tostringtag/shams')();
+var forEach = require('for-each');
 
-var forEach = function (arr, func) {
-	var i;
-	for (i = 0; i < arr.length; ++i) {
-		func(arr[i], i, arr);
-	}
-};
+var isGeneratorFunction = require('../index');
 
 test('returns false for non-functions', function (t) {
 	var nonFuncs = [
