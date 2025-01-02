@@ -58,6 +58,7 @@ test('returns false for non-generator function with faked toString', function (t
 
 test('returns false for non-generator function with faked @@toStringTag', { skip: !hasToStringTag || generatorFuncs.length === 0 }, function (t) {
 	var generatorFunc = generatorFuncs[0];
+	/** @type {{ toString(): unknown; valueOf(): unknown; [Symbol.toStringTag]?: unknown; }} */
 	var fakeGenFunction = {
 		toString: function () { return String(generatorFunc); },
 		valueOf: function () { return generatorFunc; }
