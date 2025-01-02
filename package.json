@@ -42,7 +42,7 @@
 		"url": "https://github.com/inspect-js/is-generator-function/issues"
 	},
 	"dependencies": {
-		"has-tostringtag": "^1.0.0"
+		"has-tostringtag": "^1.0.2"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.1",
