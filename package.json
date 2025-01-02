@@ -43,7 +43,8 @@
 	},
 	"dependencies": {
 		"get-proto": "^1.0.0",
-		"has-tostringtag": "^1.0.2"
+		"has-tostringtag": "^1.0.2",
+		"safe-regex-test": "^1.1.0"
 	},
 	"devDependencies": {
 		"@ljharb/eslint-config": "^21.1.1",

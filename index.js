@@ -2,9 +2,11 @@
 
 var toStr = Object.prototype.toString;
 var fnToStr = Function.prototype.toString;
-var isFnRegex = /^\s*(?:function)?\*/;
+var safeRegexTest = require('safe-regex-test');
+var isFnRegex = safeRegexTest(/^\s*(?:function)?\*/);
 var hasToStringTag = require('has-tostringtag/shams')();
 var getProto = require('get-proto');
+
 var getGeneratorFunc = function () { // eslint-disable-line consistent-return
 	if (!hasToStringTag) {
 		return false;
@@ -20,7 +22,7 @@ module.exports = function isGeneratorFunction(fn) {
 	if (typeof fn !== 'function') {
 		return false;
 	}
-	if (isFnRegex.test(fnToStr.call(fn))) {
+	if (isFnRegex(fnToStr.call(fn))) {
 		return true;
 	}
 	if (!hasToStringTag) {
