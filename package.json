@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"call-bound": "^1.0.3",
+		"generator-function": "^2.0.0",
 		"get-proto": "^1.0.0",
 		"has-tostringtag": "^1.0.2",
 		"safe-regex-test": "^1.1.0"
