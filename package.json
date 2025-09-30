@@ -43,9 +43,9 @@
 		"url": "https://github.com/inspect-js/is-generator-function/issues"
 	},
 	"dependencies": {
-		"call-bound": "^1.0.3",
+		"call-bound": "^1.0.4",
 		"generator-function": "^2.0.0",
-		"get-proto": "^1.0.0",
+		"get-proto": "^1.0.1",
 		"has-tostringtag": "^1.0.2",
 		"safe-regex-test": "^1.1.0"
 	},
