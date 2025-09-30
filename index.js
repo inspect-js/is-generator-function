@@ -27,5 +27,5 @@ module.exports = function isGeneratorFunction(fn) {
 		return false;
 	}
 	var GeneratorFunction = getGeneratorFunction();
-	return GeneratorFunction && getProto(fn) === GeneratorFunction;
+	return GeneratorFunction && getProto(fn) === GeneratorFunction.prototype;
 };
